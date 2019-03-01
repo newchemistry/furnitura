@@ -1,0 +1,13 @@
+nav.navBar#navBar
+  #burger.burger
+    .x
+    .y
+    .z
+  a#back-to-top.navLink.js-scroll-trigger(href='#')
+    img(src='/img/svg/logo.svg')
+  #circle.circle
+  .menu
+    ul.nav
+      each $val in $sections
+        li
+          a.navLink.js-scroll-trigger(href='#'+$val.value)=$val.name

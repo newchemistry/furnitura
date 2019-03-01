@@ -1,0 +1,125 @@
+.section
+  width: 100%
+  position: relative
+  overflow: hidden
+  padding-top: 50px
+  padding-bottom: 50px
+  z-index: 5
+
+  &.d-bg
+    color: #f1f1f1
+    h2::before
+      background-color: #f1f1f1
+  &.w-bg
+    color: #171717
+    background-color: #f1f1f1
+    h2::before
+      background-color: #171717
+  h2::before
+    content: ""
+    display: block
+    height: 2px
+    width: 100px
+    margin: 50px auto
+  p
+    line-height: 2
+    letter-spacing: .7px
+    &.text-justify
+      margin-bottom: 100px
+/* About
+
+.properties
+  overflow: hidden
+  position: relative
+  padding: 100px 0
+
+.property
+  padding-top: 100px
+  svg
+
+    +p-absolute(center,top)
+    transform:  translate(-50%,0) scale(.5,.5)
+  span
+    display: inline-block
+    width: 100px
+    letter-spacing: .7px
+    font-size: 12px
+    font-weight: 300
+
+
+/*services
+.service
+  margin-bottom: 100px
+  .service-item-txt
+    padding-top: 30px
+  &.flex-row
+    .service-item-txt
+      padding-left: 40px
+    .service-item-img
+      border-radius:  300px 0 0 300px
+
+  &.flex-row-reverse
+    .service-item-txt
+      padding-right: 40px
+      text-align: right
+    .service-item-img
+      border-radius:  0 300px 300px 0
+.service-item
+  overflow: hidden
+  height: 300px
+  h3
+    line-height: 2
+    display: inline-block
+    &::after
+      content: ""
+      background-color: rgba(32, 47, 68, 0.3)
+      display: block
+      height: 2px
+      width: 100%
+  span
+    display: block
+    text-transform: lowercase
+    font-family: 'Gotham Pro'
+    font-size: 18px
+    line-height: 2
+    color: rgba(44, 64, 88, 0.8)
+    padding-bottom: 20px
+
+/*equipment
+#equipment
+  background-image: url('../img/home-eqipment-bg.jpg')
+  height: 50vh
+  min-height: 600px
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+/*Clients
+.logo-clients
+  margin-bottom: 50px
+  img
+    transform: scale(0.7, 0.7)
+
+/*Contacts
+#contacts
+  height: 100vh
+.contacts
+  width: 200px
+  margin: auto
+  a
+    position: relative
+    padding: 20px
+    padding-left: 50px
+    color: #f1f1f1
+
+    img
+      +p-absolute(left,center)
+      height: 30px
+      width: auto
+    &.mail
+      img
+        width: 30px
+        height: auto
+        left: -6px
+    &.address
+      font-size: 12px

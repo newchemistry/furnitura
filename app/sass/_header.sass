@@ -1,0 +1,75 @@
+header
+  width: 100%
+  height: 100vh
+  text-align: center
+  position: relative
+  background: url('/img/intro-bg.jpg') no-repeat center
+  background-size: cover
+  z-index: 5
+  overflow: hidden
+
+
+.cover
+  +absoluteCenter
+  z-index: 0
+  width: 100%
+  height: 105%
+  background: #111
+  opacity: .8
+.intro
+  +absoluteCenter
+
+.logo
+  +absoluteCenter
+  transition: .8s
+  width: 100%
+  img
+    width: 70px
+    height: auto
+    +p-absolute(center,top)
+  .name
+    display: inline-block
+    padding-top: 55px
+    span
+      font-family: 'Comfortaa', cursive
+      font-size: 37px
+      letter-spacing: 12px
+      text-transform: uppercase
+    h1
+      font-family: 'Comfortaa', cursive
+      font-size: 14px
+      text-transform: lowercase
+      color: #f1f1f1
+      padding: 0
+      text-align: left
+.slogan
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,100%)
+  opacity: 0
+  text-transform: uppercase
+  letter-spacing: 1.8px
+  display: block
+  transition: .8s
+  font-family: 'Gotham Pro'
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5)
+  font-size: 18px
+  line-height: 2
+.next
+  +p-absolute(center,bottom)
+  padding: 10px
+  display: block
+  transition: .2s
+  animation: nextBtn 2s infinite ease-in-out
+  margin-bottom: 100px
+
+@keyframes nextBtn
+  0%
+    transform: translateX(-50%) translateY(20%) scale(.8,.8)
+
+  50%
+    transform: translateX(-50%) translateY(0)  scale(.8,.8)
+
+  100%
+    transform: translateX(-50%) translateY(20%)  scale(.8,.8)

@@ -1,0 +1,23 @@
+section.section.d-bg#contacts
+  .container
+    .col-lg-10.mx-auto
+      h2= 'Контакты'
+      .contacts
+
+        a.d-block.text-left(href="tel:+71234567890")= '+7 915 337 90 42'
+          img(src='/img/contacts/tel.svg') 
+        a.mail.d-block.text-left(href="mailto:info@blanh.ru")= 'info@blanh.ru'
+          img(src='/img/contacts/mail.svg') 
+        a.address.d-block.text-left(href="https://yandex.ru/maps/213/moscow/?ll=37.669001%2C55.849580&mode=search&sll=37.670016%2C55.849974&sspn=0.015771%2C0.005118&text=%D0%95%D0%BD%D0%B8%D1%81%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%201c2&z=17")= 'г. Москва, Енисейская улица, 1с2'
+          img(src='/img/contacts/address.svg') 
+  ul.socLinks.d-flex.justify-content-center
+    -
+      var $socLinks = [
+        {href: 'https://www.facebook.com/blanh.ru/', icon: 'fb'},
+        {href: 'https://vk.com/blanh', icon: 'vk'},
+        {href: 'https://www.instagram.com/blanh.ru/', icon: 'instagram'}
+      ]
+    each $val in $socLinks
+      li
+        a.socLink(href=$val.href target="_blank")
+          !=  '@@include("img/svg/'+$val.icon+'.svg")' 
